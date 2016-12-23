@@ -1,0 +1,8 @@
+<table class="table">
+	<tr>
+		<th>Home Team</th><th>Visiting Team</th><th>Location</th><th>Date</th>
+	</tr>
+	<tr ng-repeat="game in selectedTeam.games"> <!--repeat games filter by selected team-->
+		<td>{{game.game.home_name}}</td><td>{{game.game.visitor_name}}</td><td>{{game.venue_name}}</td><td>{{game.start_time | date:"EEE MM/dd/yyyy 'at' h:mma"}}</td>
+	</tr>
+</table>
