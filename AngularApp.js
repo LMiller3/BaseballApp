@@ -1,6 +1,7 @@
 var app = angular.module('baseballApp', []);
 
 app.controller('indexController', ['$scope', '$http', function IndexController($scope, $http) {
+	$scope.date = new Date();
 	 function groupGamesPerTeam(events, teams){
 		 for(var i = 0; i < events.length; i++)
 		 {
